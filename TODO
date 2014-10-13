@@ -1,0 +1,5 @@
+- dot file in ~/ ?
+  SQL::Beautify has lots of configuration twiddles
+- move code into a module
+  Would people want to use this from other code?
+  I would think think they'd just use SQL::Beautify directly but who knows.

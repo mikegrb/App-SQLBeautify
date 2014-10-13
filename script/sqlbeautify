@@ -1,0 +1,16 @@
+#!/usr/bin/env perl
+
+use 5.012;
+use warnings;
+
+use SQL::Beautify;
+
+my $ugly_sql;
+while ( defined( my $line = <> ) ) {
+  $ugly_sql .= $line;
+}
+
+my $sb = SQL::Beautify->new();
+$sb->query($ugly_sql);
+
+say $sb->beautify;
